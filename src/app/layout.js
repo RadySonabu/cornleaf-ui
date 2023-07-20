@@ -1,7 +1,5 @@
-"use client";
 import './globals.css'
 import { Inter } from 'next/font/google'
-import { ThemeProvider } from "@material-tailwind/react";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,11 +10,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ThemeProvider>
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <body className={inter.className}>{children}</body>
     </html>
-    </ThemeProvider>
 
   )
 }

@@ -14,7 +14,6 @@ import axios from "axios";
 
 
 export default function LoginForm() {
-  const isUserAuthenticated = ProtectedRoute();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const router = useRouter();

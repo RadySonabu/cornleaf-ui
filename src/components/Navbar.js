@@ -8,6 +8,7 @@ import {
   Card,
 } from "@material-tailwind/react";
 import Link from "next/link";
+import Logout from "./Logout";
  
 export default function MyNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -77,15 +78,7 @@ export default function MyNavbar() {
           </Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
-            <Link href='/login'>
-                <Button
-                variant="gradient"
-                size="sm"
-                className="hidden lg:inline-block"
-                >
-                <span>Logins</span>
-                </Button>
-            </Link>
+            <Logout/>
             <IconButton
               variant="text"
               className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"

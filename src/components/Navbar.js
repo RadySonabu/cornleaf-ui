@@ -38,7 +38,7 @@ export default function MyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <a href="/profile" className="flex items-center">
           Account
         </a>
       </Typography>

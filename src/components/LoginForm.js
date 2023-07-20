@@ -8,26 +8,36 @@ import {
     Typography,
 } from "@material-tailwind/react";
 import { useState } from "react";
-
+import { useRouter } from 'next/navigation';
+import ProtectedRoute from '@/components/ProtectedRoutes'
+import axios from "axios";
 
 
 export default function LoginForm() {
+  const isUserAuthenticated = ProtectedRoute();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const router = useRouter();
 
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      console.log(e)
-
-      // const response = await axios.post('/api/login', { email, password });
-      // Handle successful login, e.g., store the token in local storage or cookies
-      if (setEmail == 'ardy@gmail.com' & setPassword== '12345678'){
-        return true
+      const payload = {
+        email, password
+      }
+      const response = await axios.post(
+        'https://wj2e17sxka.execute-api.ap-southeast-1.amazonaws.com/dev/auth/jwt/create/',
+        payload
+      )
+      if (response.status === 200) {
+        console.log(response.data['refresh'])
+        localStorage.setItem('authToken', response.data['refresh']);
+        router.push('/');
+      } else {
+        alert('Invalid credentials');
       }
     } catch (error) {
       console.error('Login failed:', error);
-      // Handle login error, e.g., display an error message to the user
     }
   }
     return (

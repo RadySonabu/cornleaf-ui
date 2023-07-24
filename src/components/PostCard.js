@@ -7,6 +7,7 @@ import {
     Avatar,
     Tooltip,
   } from "@material-tailwind/react";
+import Image from "next/image";
    
   export default function PostCard({author, content, imageLink}) {
     return (
@@ -17,10 +18,10 @@ import {
           color="transparent"
           className="m-0 rounded-none"
         >
-          <img
+          <Image
             src={imageLink}
             className="h-80 w-full object-cover"
-            loading="lazy"
+            loading="lazy" alt=""
           />
           
         </CardHeader>

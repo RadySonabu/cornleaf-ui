@@ -30,8 +30,10 @@ export default function LoginForm() {
       )
       if (response.status === 200) {
         console.log(response.data['refresh'])
+        if (typeof window !== 'undefined') {
         localStorage.setItem('authToken', response.data['refresh']);
         router.push('/');
+        }
       } else {
         alert('Invalid credentials');
       }
@@ -57,7 +59,7 @@ export default function LoginForm() {
             Sign in
           </Button>
           <Typography color="gray" className="mt-4 text-center font-normal">
-            Don't have an account?{" "}
+            Don&apos;t have an account?{" "}
             <a
               href="#"
               className="font-medium text-blue-500 transition-colors hover:text-blue-700"

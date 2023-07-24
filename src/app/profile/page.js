@@ -1,6 +1,7 @@
 "use client";
 import React from 'react'
 import MyNavbar from '@/components/Navbar';
+import Image from 'next/image';
  
 export default function page() {
 
@@ -16,7 +17,7 @@ export default function page() {
             <div className="relative flex flex-col items-center rounded-[20px] w-[400px] mx-auto p-4 bg-white bg-clip-border shadow-3xl shadow-shadow-500 dark:!bg-navy-800 dark:text-white dark:!shadow-none">
                 <div className="relative flex h-32 w-full justify-center rounded-xl bg-cover" >
                     <div className="absolute -bottom-12 flex h-[200px] w-[200px] items-center justify-center rounded-full border-[4px] border-white bg-pink-400 dark:!border-navy-700">
-                        <img className="h-full w-full rounded-full" src='https://www.theventuretours.com/wp-content/uploads/2020/03/avatar-icon-png-1-600x600.png' alt="" />
+                        <Image className="h-full w-full rounded-full" src='https://www.theventuretours.com/wp-content/uploads/2020/03/avatar-icon-png-1-600x600.png' alt="" />
                     </div>
                 </div> 
                 <div className="mt-16 flex flex-col items-center">
@@ -62,8 +63,8 @@ export default function page() {
 
     <div className="grid grid-cols-12 sm:px-5 gap-x-8 gap-y-16">
       <div className="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
-        <img
-            src="https://images.unsplash.com/photo-1626318305863-bb23d0297c0b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" className="object-cover w-full mb-2 overflow-hidden rounded-lg shadow-sm max-h-56 btn-"/>
+        <Image
+            src="https://images.unsplash.com/photo-1626318305863-bb23d0297c0b?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" className="object-cover w-full mb-2 overflow-hidden rounded-lg shadow-sm max-h-56 btn-" alt=""/>
        
         <a className="text-lg font-bold sm:text-xl md:text-2xl">My man</a>
         <p className="text-sm text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -75,8 +76,8 @@ export default function page() {
         </div>
       </div>
       <div className="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
-        <img
-            src="https://images.unsplash.com/photo-1626285861696-9f0bf5a49c6d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" className="object-cover w-full mb-2 overflow-hidden rounded-lg shadow-sm max-h-56 btn-"/>
+        <Image
+            src="https://images.unsplash.com/photo-1626285861696-9f0bf5a49c6d?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" className="object-cover w-full mb-2 overflow-hidden rounded-lg shadow-sm max-h-56 btn-" alt=""/>
        
         <a className="text-lg font-bold sm:text-xl md:text-2xl">My cutie puppy!</a>
         <p className="text-sm text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -88,8 +89,8 @@ export default function page() {
         </div>
       </div>
       <div className="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
-        <img
-            src="https://images.unsplash.com/photo-1626197031507-c17099753214?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzR8fHxlbnwwfHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" className="object-cover w-full mb-2 overflow-hidden rounded-lg shadow-sm max-h-56 btn-"/>
+        <Image
+            src="https://images.unsplash.com/photo-1626197031507-c17099753214?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzR8fHxlbnwwfHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60" className="object-cover w-full mb-2 overflow-hidden rounded-lg shadow-sm max-h-56 btn-" alt=""/>
        
         <a className="text-lg font-bold sm:text-xl md:text-2xl">Dessert, Sweets!</a>
         <p className="text-sm text-black">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor

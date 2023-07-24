@@ -37,17 +37,29 @@ export default function page() {
         <div className="flex flex-col items-start justify-center h-full space-y-3 transform md:pr-10 lg:pr-16
             md:space-y-5">
   
-          <a className="text-4xl font-bold leading-none lg:text-5xl xl:text-4xl">Recently Post</a>
+  <div class="sm:block hidden">
+        <button
+          type="button"
+          className="flex -mt-12 w-auto cursor-pointer select-none appearance-none items-center justify-center space-x-1 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-800 transition hover:border-gray-300 focus:border-gray-300 focus:outline-none focus:ring-0"
+        >
+          Edit profile
+        </button>
+  </div> 
+    
+        <div className='flex space-x-40'>
+
+        <a className="text-2xl font-bold leading-none lg:text-2xl xl:text-2xl">Recent Post</a>
           
-        <div className="w-full mt-6">
-                <a className="flex text-center items-center justify-center w-full pt-4 pr-10 pb-4 pl-10 text-base
-                    font-medium text-white bg-indigo-600 rounded-xl transition duration-500 ease-in-out transform
-                    hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Add Post</a>
-              </div>
+          <div className="w-full mt-6">
+                  <a className="flex text-center items-center justify-center w-full pt-4 pr-10 pb-4 pl-10 text-base
+                      font-medium text-white bg-indigo-600 rounded-xl transition duration-500 ease-in-out transform
+                      hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Add Post</a>
+          </div>
         </div>
+       </div>
       </div>
-     
     </div>
+
     <div className="grid grid-cols-12 sm:px-5 gap-x-8 gap-y-16">
       <div className="flex flex-col items-start col-span-12 space-y-3 sm:col-span-6 xl:col-span-4">
         <img

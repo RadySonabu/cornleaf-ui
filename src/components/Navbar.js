@@ -29,7 +29,7 @@ export default function MyNavbar() {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Pages
+          Create Post
         </a>
       </Typography>
       <Typography
@@ -39,7 +39,7 @@ export default function MyNavbar() {
         className="p-1 font-normal"
       >
         <a href="/profile" className="flex items-center">
-          Account
+          My Profile
         </a>
       </Typography>
       
@@ -101,9 +101,8 @@ export default function MyNavbar() {
         </div>
         <Collapse open={openNav}>
           {navList}
-          <Button variant="gradient" size="sm" fullWidth className="mb-2">
-            <span>Login</span>
-          </Button>
+          <Logout/>
+
         </Collapse>
       </Navbar>
       
